@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch-AC2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="./logo/Logo.png" width="5%" class="img-responsive logo1" />
+
+      <img src="./logo/header.png" class="img-responsive logo2" />
+      <button class="toggle-sidenav" onclick="toggleSidenav()">☰</button>
+      <!-- Toggle Button -->
+    </div>
+
+    <div class="container">
+      <!-- Left Side Navigation -->
+      <div class="sidenav">
+        <button onclick="showContent('activity1')">Activity 1</button>
+        <button onclick="showContent('additional-activity1')">
+          Additional Activity 1
+        </button>
+        <button onclick="showContent('additional-activity2')">
+          Additional Activity 2
+        </button>
+      </div>
+
+      <!-- Right Side Content -->
+      <div class="content">
+        <!-- INTRODUCTION TO PROGRAMMING -->
+        <div id="activity1" class="content-section">
+          <h2>Unlock the treasure!</h2>
+          Here is an almost completed maze game!
+          <br />👉
+          <button
+            class="project-btn"
+            onclick="window.open('https://scratch.mit.edu/projects/1073223493', '_blank')"
+          >
+            Open Template
+          </button>
+          <br />
+          <br />
+          Use the following username and password to sign in:
+          <div class="form-container">
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" id="username" value="wts_coding" disabled />
+              <button class="copy-btn" onclick="copyText('username')">
+                Copy
+              </button>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="text" id="password" value="student1234" disabled />
+              <button class="copy-btn" onclick="copyText('password')">
+                Copy
+              </button>
+            </div>
+          </div>
+
+          You need to bring the key to the treasure chest. <br />
+          Right now when you press arrow keys nothing is happening. <br />Can
+          you make the key move when you press the arrow keys?
+          <!-- Buttons to link to the activity template and solution -->
+          <br /> <br>
+          <a class="solution" onclick="toggleSolution()">View Solution</a>
+          <br />
+          <img id="solution-img" src="./images/sol1.png" alt="" width="90%" style="display: none;" />
+          <br />
+          <br />
+          <button
+            class="project-btn"
+            style="background-color: #a564b4; font-size: 1.2rem"
+            onclick="showContent('additional-activity1')"
+          >
+            Additional Activity 1
+          </button>
+          <br />
+        </div>
+
+        <div id="additional-activity1" class="content-section">
+          <h2>Unlock the treasure!- part 2</h2>
+          Let’s try to show a message when the key touches the treasure. <br />
+          <br />
+          <div >
+            <div>
+                Go to the Looks section and select “say” block. <br>
+                <img src="./images/image3.png" width="40%" /> <br>
+            </div> 
+            <p>You can type the message and put it inside the if-block created for the chest sprite. We will discuss if block in the upcoming classes.
+            </p>
+          </div>
+          <!-- Buttons to link to the activity template and solution -->
+          <br />
+          <a class="solution" onclick="toggleSolution2()">View Solution</a>
+          <br />
+          <img id="solution-img2" src="./images/sol2.png" alt="" width="90%" style="display: none;" />
+          <br>
+          <button
+            class="project-btn"
+            style="background-color: #a564b4; font-size: 1.2rem"
+            onclick="showContent('additional-activity2')"
+          >
+            Additional Activity 2
+          </button>
+          <br />
+        </div>
+
+        <div id="additional-activity2" class="content-section">
+          <h2>Teleporter</h2>
+          You know, you can even teleport your sprite to different places. Let’s
+          try to do that. <br />👉<button
+            class="project-btn"
+            onclick="window.open('https://scratch.mit.edu/projects/1073661014', '_blank')"
+          >
+            Open Template
+          </button>
+          <br />
+
+          <ol>
+            <li>Step 1: Select a sprite</li>
+            <img src="./images/aa1.png" alt="" width="90%"> <br>
+            <li>Step 2: Select 5 different backdrops
+            </li> 
+            <img src="./images/aa2.png" alt="" width="70%"><br>
+            <li>Step 3: Select the event “when this sprite clicked” then go to looks and attach the “next backdrop” block to it.</li>
+            <img src="./images/aa3.png" alt="" width="70%"><br>
+            <li>Step 4: Check the output by clicking on the green flag icon.</li>
+            <img src="./images/aa4.gif" alt="" width="70%">
+          </ol>
+
+          <!-- Buttons to link to the activity template and solution -->
+          <br />
+          <br />
+        
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
